@@ -93,7 +93,7 @@
       <PreprocessorDefinitions>WIN32;_HUNTER_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Windows;C:\Users\talha\Desktop\c++\TestGame\glad\include;C:\Users\talha\Desktop\c++\TestGame\glfw\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;;%(AdditionalIncludeDirectories);C:\Users\talha\Desktop\c++\TestGame\glfw\include\GLFW</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>WIN32;_HUNTER_DLL_BUILD</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Windows;C:\Users\talha\Desktop\c++\TestGame\glad\include;C:\Users\talha\Desktop\c++\TestGame\glfw\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;;%(AdditionalIncludeDirectories);C:\Users\talha\Desktop\c++\TestGame\glfw\include\GLFW</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -129,7 +129,7 @@
       <PreprocessorDefinitions>WIN32;_HUNTER_DLL_BUILD;_MYDEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Windows;C:\Users\talha\Desktop\c++\TestGame\glad\include;C:\Users\talha\Desktop\c++\TestGame\glfw\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories);C:\Users\talha\Desktop\c++\TestGame\glfw\include\GLFW</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -147,7 +147,7 @@
       <PreprocessorDefinitions>WIN32;_HUNTER_DLL_BUILD</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Windows;C:\Users\talha\Desktop\c++\TestGame\glad\include;C:\Users\talha\Desktop\c++\TestGame\glfw\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;C:\Users\talha\Desktop\c++\TestGame\GameEngine\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories);C:\Users\talha\Desktop\c++\TestGame\glfw\include\GLFW</AdditionalIncludeDirectories>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -163,10 +163,21 @@
     <ClInclude Include="include\HunterApp.h" />
     <ClInclude Include="include\HunterCentral.h" />
     <ClInclude Include="include\pch.h" />
+    <ClInclude Include="include\Window.h" />
+    <ClInclude Include="include\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\HunterApp.cpp" />
-    <ClCompile Include="include\pch.cpp" />
+    <ClCompile Include="src\HunterApp.cpp" />
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\Windows\WindowsWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\glad\glad.vcxproj">
+      <Project>{4892a771-ddec-4fc7-a568-cbe2c3cee434}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\glfw\build\src\glfw.vcxproj">
+      <Project>{eda4ca6c-57a7-324d-b9f6-0f4bdfc234d1}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
