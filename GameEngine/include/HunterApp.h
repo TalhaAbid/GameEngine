@@ -10,6 +10,8 @@ namespace Hunter
 		static HunterApp* GetApplication();
 		static void Init();
 		virtual ~HunterApp();
+		static int GetWindowHeight();
+		static int GetWindowWidth();
 	private:
 		HunterApp();
 		inline static HunterApp* instance{ nullptr };

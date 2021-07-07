@@ -9,6 +9,7 @@ namespace Hunter {
 		if (window == nullptr) {
 			return false;
 		}
+		glfwGetWindowSize(window,&this->width,&this->height);
 		glfwMakeContextCurrent(window);
 		gladLoadGL();
 
@@ -27,5 +28,13 @@ namespace Hunter {
 	void WindowsWindow::PollForEvents()
 	{
 		glfwPollEvents();
+	}
+	int WindowsWindow::GetWidth() const
+	{
+		return width;
+	}
+	int WindowsWindow::GetHeight() const
+	{
+		return height;
 	}
 }
