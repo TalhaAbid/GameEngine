@@ -14,6 +14,14 @@ namespace Hunter {
 		gladLoadGL();
 
 		glfwSwapInterval(1);
+
+		glfwSetWindowUserPointer(window, &mCallbacks);
+
+		glfwSetKeyCallback(window, [](GLFWwindow* window, int key, int scancode, int action, int mods) {
+			KeyPressedEvent event{ key };
+			Callbacks*  callbacks =  (Callbacks*)glfwGetWindowUserPointer(window);
+			callbacks->mKeyPressedCallback(event);
+			});
 		return true;
 	}
 	void WindowsWindow::DeleteWindow()
@@ -36,5 +44,9 @@ namespace Hunter {
 	int WindowsWindow::GetHeight() const
 	{
 		return height;
+	}
+	void WindowsWindow::setKeyPressedCallback(std::function<void(KeyPressedEvent&)> newCallback)
+	{
+		mCallbacks.mKeyPressedCallback = newCallback;
 	}
 }

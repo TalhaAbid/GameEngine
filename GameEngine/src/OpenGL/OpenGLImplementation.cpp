@@ -11,7 +11,12 @@ namespace Hunter {
 	{
 		mShaderDefault.Load("../GameEngine/assets/shaders/VertexShaderDefault.glsl",
 			"../GameEngine/assets/shaders/FragmentShaderDefault.glsl");
+
+
 		mShaderDefault.Use();
+
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	}
 	void OpenGLImplementation::Draw(const Sprite& image, int x_pos, int y_pos, int width, int height)

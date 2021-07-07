@@ -36,6 +36,12 @@
     <ClCompile Include="src\OpenGL\OpenGLImplementation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KeyboardEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\HunterApp.h">
@@ -74,6 +80,12 @@
     <ClInclude Include="include\RendererImplementation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KeyboardEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\shaders\FragmentShaderDefault.glsl" />
@@ -87,6 +99,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="assets\sprites\boss.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\sprites\smiley.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

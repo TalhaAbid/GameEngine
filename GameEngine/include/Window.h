@@ -1,5 +1,7 @@
 #pragma once
+#include "pch.h"
 #include "HunterCentral.h"
+#include "KeyboardEvents.h"
 namespace Hunter{
 	class Window
 	{
@@ -11,5 +13,6 @@ namespace Hunter{
 		virtual void PollForEvents() = 0;
 		virtual int GetWidth() const = 0;
 		virtual int GetHeight() const = 0;
+		virtual void setKeyPressedCallback(std::function<void(KeyPressedEvent&)> newCallback) = 0;
 	};
 }

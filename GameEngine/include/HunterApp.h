@@ -1,6 +1,8 @@
 #pragma once
 #include "HunterCentral.h"
 #include "Window.h"
+#include "WindowsWindow.h"
+#include "KeyboardEvents.h"
 namespace Hunter 
 {
 	class HUNTER_API HunterApp
@@ -12,9 +14,11 @@ namespace Hunter
 		virtual ~HunterApp();
 		static int GetWindowHeight();
 		static int GetWindowWidth();
+
+		void onKeyPressed(KeyPressedEvent& event);
 	private:
 		HunterApp();
 		inline static HunterApp* instance{ nullptr };
-		Hunter::Window* appWindow{nullptr};
+		Window* appWindow{nullptr};
 	};
 }
