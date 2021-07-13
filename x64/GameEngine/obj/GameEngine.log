@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(476,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  WindowsWindow.cpp
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\KeyboardEvents.h(8,2): warning C4275: non dll-interface class 'Hunter::Event' used as base for dll-interface class 'Hunter::KeyPressedEvent'
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Event.h(12): message : see declaration of 'Hunter::Event'
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\KeyboardEvents.h(7): message : see declaration of 'Hunter::KeyPressedEvent'
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\KeyboardEvents.h(17,2): warning C4275: non dll-interface class 'Hunter::Event' used as base for dll-interface class 'Hunter::KeyReleasedEvent'
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\Event.h(12): message : see declaration of 'Hunter::Event'
+C:\Users\talha\Desktop\c++\TestGame\GameEngine\include\KeyboardEvents.h(16): message : see declaration of 'Hunter::KeyReleasedEvent'
+  GameEngine.vcxproj -> C:\Users\talha\Desktop\c++\TestGame\Debug\GameEngine.dll

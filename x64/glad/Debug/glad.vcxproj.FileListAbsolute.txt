@@ -1,0 +1,2 @@
+C:\Users\talha\Desktop\c++\TestGame\Debug\glad.pdb
+C:\Users\talha\Desktop\c++\TestGame\glad\Debug\glad.pdb

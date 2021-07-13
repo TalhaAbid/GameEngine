@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\talha\Desktop\c++\TestGame\glfw\build\CMakeFiles\a3a35f69265f28ba5510cf5e2a2d4371\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\talha\Desktop\c++\TestGame\glfw\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\talha\Desktop\c++\TestGame\glfw\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1ADB2ACC-E680-339D-B9B7-1FF6060AA134}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
