@@ -1,0 +1,2 @@
+C:\Users\talha\Desktop\c++\TestGame\x64\Debug\stb_image.pdb
+C:\Users\talha\Desktop\c++\TestGame\stb_image\x64\Debug\stb_image.pdb
