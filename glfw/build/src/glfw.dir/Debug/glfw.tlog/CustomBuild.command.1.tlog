@@ -1,0 +1,10 @@
+^C:\USERS\TALHA\DESKTOP\C++\TESTGAME\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/talha/Desktop/c++/TestGame/glfw -BC:/Users/talha/Desktop/c++/TestGame/glfw/build --check-stamp-file C:/Users/talha/Desktop/c++/TestGame/glfw/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
